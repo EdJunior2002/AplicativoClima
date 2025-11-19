@@ -83,27 +83,4 @@ flutter run -d <DEVICE_ID>
 
 ---
 
-## ❓ Quer que eu...
-- Crie um `README.md` mais técnico (versão longa)? ✅ (já criado)
-- Adicione um `DOCS/RESUMO_APRESENTACAO.md` ou `README_APRESENTACAO.md` com texto para slides? 📝
-- Atualize `lib/config.dart` para usar `--dart-define` e mostrar exemplo de uso? 🔒
 
----
-
-Feito com ❤ por você — pronto para enviar ao GitHub! 🚀
-# app_clima
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
