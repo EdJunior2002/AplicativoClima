@@ -28,8 +28,9 @@ class WeatherServices {
       if (response.statusCode == 200) {
         final Map<String, dynamic> json = jsonDecode(response.body);
         return WeatherData.fromJson(json);
+      } else if (response.statusCode == 404) {
+        throw Exception('Cidade não encontrada. Verifique o nome e tente novamente.');
       } else {
-  
         throw Exception('Erro ao carregar dados do tempo (status: ${response.statusCode})');
       }
     } on TimeoutException catch (_) {
@@ -60,6 +61,8 @@ class WeatherServices {
       if (response.statusCode == 200) {
         final Map<String, dynamic> json = jsonDecode(response.body);
         return ForecastData.fromJson(json);
+      } else if (response.statusCode == 404) {
+        throw Exception('Cidade não encontrada (forecast). Verifique o nome e tente novamente.');
       } else {
         throw Exception('Erro ao carregar forecast (status: ${response.statusCode})');
       }
